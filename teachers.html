@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Teachers page</title>
+</head>
+<body>
+    <div class="wrapper d-flex ">
+        <div class="wrapper__left">
+            <div class="contact__wrapper d-flex justify-content-between align-items-center ">
+                <img src="./images/contact.png" width="48" height="48">
+                <img src="./images/logo.svg" alt="site logo" width="80" height="50">
+                <img src="./images/menu-toggle.png" width="32" height="32">
+            </div>
+            <ul class="pages__list d-flex flex-column row-gap-3 list-unstyled mt-4">
+                <li class="pages__item ">
+                    <a class="d-flex gap-3 text-decoration-none " href="./index.html">
+                        Xisobot 
+                    </a>
+                </li>
+                <li class="pages__item ">
+                    <a class="d-flex gap-3 text-decoration-none " href="./students.html">
+                        O’quvchilar
+                    </a>
+                </li>
+                <li class="pages__item ">
+                    <a class="d-flex gap-3 text-decoration-none " href="./groups.html">
+                        Guruhlar
+                    </a>
+                </li>
+                <li class="pages__item ">
+                    <a class="d-flex gap-3 text-decoration-none " href="./teachers.html">
+                        O’qituvchilar
+                    </a>
+                </li>
+                <li class="pages__item ">
+                    <a class="d-flex gap-3 text-decoration-none " href="/subjects.html">
+                        Fanlar
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="wrapper__right">
+            <h1 class="title">O’qituvchilar</h1> 
+            <div class="content">
+                <h2 class="student__title">Yangi o’qituvchi qo’shish</h2>
+                <form class="js-teacher-form">
+                    <ul class="form__list d-flex list-unstyled flex-wrap gap-4 m-0 justify-content-between ">
+                        <li class="form__item">
+                            <label for="name" class="mb-2">O’qituvchi ismi</label>
+                            <input id="name" type="text" class="js-input-name-teacher form-control " placeholder="Ism kiriting" required>
+                        </li>
+                        <li class="form__item">
+                            <label for="surname" class="mb-2">O’qituvchi familyasi</label>
+                            <input id="surname" type="text" class="js-input-surname-teacher form-control" placeholder="Familya kiriting" required>
+                        </li>
+                        <li class="form__item">
+                            <label for="yunalish" class="mb-2 ">Yo’nalish</label>
+                            <select id="yunalish" class="form-select "></select>
+                        </li>
+                        <li class="form__item">
+                            <label for="tel" class="mb-2">Telefon raqam</label>
+                            <input id="tel" type="tel" class="js-input-tel-teacher form-control" placeholder="Telefon raqam kiriting" required>
+                        </li>
+                        
+                        <li class="form__item">
+                            <label for="age" class="mb-2">O’qituvchi yoshi</label>
+                            <input id="age" type="number" class="js-input-age-teacher form-control" placeholder="Yosh kiriting" required>
+                        </li>
+                        <li class="form__item w-25">
+                            <label for="rasm" class="mb-2 ">Rasm 3x4</label>
+                            <input id="rasm" type="file" class="form-control " required>
+                        </li>
+                        <li class="form__item align-self-end w-25 ms-auto">  
+                            <button type="submit" class="js-student-btn btn btn-primary w-100  ">Qo'shish</button> 
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="add-student__wrapper mt-5 px-5">
+                <div class="add-title__wrapper d-flex justify-content-between ">
+                    <h2 class="add-student__title">Bizning o’qituvchilar</h2>
+                    <form class="js-add-student-search-form">
+                        <input type="text" class="form-control search__add" placeholder="Qidirish...">
+                    </form>
+                </div>
+                <div class="table__wrapper overflow-y-auto">
+                    <table class="table shadow   ">
+                        <thead class="table-primary  ">
+                            <tr>
+                                <th scope="col">№</th>
+                                <th scope="col">O’qituvchi ismi</th>
+                                <th scope="col">Telefon nomer</th>
+                                <th scope="col">Yo’nalish</th>
+                                <th scope="col">Yoshi</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody class="js-teacher-table">
+                            
+                        </tbody>
+                    </table>  
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <script src="/js/teachers.js"></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F0F2FA;
+}
+.title {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 20px;
+    padding-left: 32px;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.36px;
+    color: #0061f7;
+    background-color: #fff;
+}
+.wrapper__left {
+    max-width: 270px;
+    width: 100%;
+    flex-grow: 1;
+    max-height: 100%    ;
+    padding: 20px;
+    background-color: #2f49d1;
+}
+.contact__wrapper {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+.pages__item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #2f49d1;
+}
+.pages__item a {
+    flex-grow: 1;
+    padding: 12px;
+    color: #fff;
+}
+.pages__item:hover {
+    background-color: #01265f;
+    border-right: 4px solid #fff;    
+}
+.pages__item:nth-child(1) a::before {
+    display: block;
+    width: 20px;
+    height: 20px;
+    content: "";
+    background-image:url(../images/Home.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pages__item:nth-child(2) a::before {
+    display: block;
+    width: 20px;
+    height: 20px;
+    content: "";
+    background-image:url(../images/graduation-cap-solid\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pages__item:nth-child(3) a::before {
+    display: block;
+    width: 20px;
+    height: 20px;
+    content: "";
+    background-image:url(../images/guruh.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pages__item:nth-child(4) a::before {
+    display: block;
+    width: 20px;
+    height: 20px;
+    content: "";
+    background-image:url(../images/oqituvchi.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pages__item:nth-child(5) a::before {
+    display: block;
+    width: 20px;
+    height: 20px;
+    content: "";
+    background-image:url(../images/fanlar.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.numbers__list {
+    gap: 30px;
+    margin-bottom: 0;
+}
+.numbers__item {
+    max-width: 460px;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 80px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.15);
+    background-image: url(../images/main-p-icon.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 165px) calc(50% + 40px);
+}
+.numbers__title {
+    font-size: 32px;
+    font-weight: 500;
+    color: #000;
+    line-height: normal;
+    letter-spacing: -1px;
+}
+.numbers__text {
+    color: #000;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1px;
+}
+
+
+/* students page  */
+
+.student__title {
+    margin-bottom: 32px;    
+    color: #0061f7;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+}
+.content {
+    padding: 32px 70px 0;
+    
+}
+.add-student__title {
+    margin-bottom: 36px;    
+    color: #0061f7;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+}
+.search__add {
+    background-image: url(../images/search-icon.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 100px) calc(50% - 0px);    
+}
+.table__wrapper {
+    max-height: 1100px;
+    
+}
+
+/* groups styles  */
+
+.title__groups {
+    color: #0061f7;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.36px;
+}
+.item__group {
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.20);
+}
+.item__group-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #c4c4c4;
+    box-shadow: 0px 4px 15px 0px rgba(47, 73, 209, 0.30);
+}
+.list__group-had {
+    width: 320px;
+}
+.item__inner {
+    padding: 12px;
+}
+.item__head {
+    color: #001062;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.16px;
+}
+.item__text {
+    margin: 0;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.14px;
+}
+.list__group-title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    border-radius: 16px 16px 0px 0px;
+    background-color: #2f49d1;
+}
+#yunalish {
+    width: 246px;
+}
+.btn__subjects {
+    max-width: 240px;
+    width: 100%;
+}
+
+/* subjects styles  */
+
+.edit-btn-subjects, .edit-btn-teacher {
+    display: block;
+    width: 25px;
+    height: 26.25px;
+    background-image: url(../images/edit.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+}
+.delete-btn-subjects, .delete-btn-teacher {
+    display: block;
+    width: 25px;
+    height: 26.25px;
+    background-image: url(../images/delete.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+}
+.subject-add-js {
+    max-height: 500px;
+    overflow-y: auto;
+}
